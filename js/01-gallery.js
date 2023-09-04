@@ -24,9 +24,7 @@ function handlePhotoClick(event) {
     }
 
     const instance = basicLightbox.create(`
-    <div class="modal">
-    <img src="${event.target.dataset.source}" alt="${event.target.alt}" />
-    </div>
+    <img src="${event.target.dataset.source}" alt="${event.target.alt}" width="800" height="600" />
     `)
 
     instance.show();
